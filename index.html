@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orbiting Luna 🌙</title>
+    <title>Orbiting Luna</title>
+	<link rel="icon" href="moon_ico.png"> <!-- Moon icons created by Freepik - Flaticon -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -11,54 +12,93 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #ffdd57, #f8a488);
-            color: #333;
+            color: #222;
             text-align: center;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            overflow-x: hidden;
         }
         header {
             background-color: #2c2c54;
             color: #ffdd57;
             padding: 20px 0;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
         }
         header h1 {
             font-family: 'Press Start 2P', cursive;
             font-size: 2.5rem;
             margin: 0;
+            text-shadow: 2px 2px #ff7f50;
         }
         header p {
-            font-size: 1rem;
+            font-size: 1.2rem;
             margin: 10px 0 0;
             color: #f8f8ff;
+            text-shadow: 1px 1px #2c2c54;
         }
         .content {
             padding: 40px 20px;
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
         }
         .content h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
+            color: #9457EB;
+            text-shadow: 3px 3px #2c2c54;
         }
         .content p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             line-height: 1.8;
-        }
-        .server-info {
-            margin: 30px 0;
-            background: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f1f1f1;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: left;
+        }
+		.content p a {
+			font-size: 1.3rem;
+			line-height: 1.8;
+			max-width: 800px;
+			text-decoration: none;
+			color: #f1f1f1;
+		}
+        .server-info {
+            margin: 30px auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
             display: inline-block;
+            transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+        }
+        .server-info:hover {
+            transform: scale(1.05);
+            background: rgba(255, 223, 87, 0.9);
+            color: #6a0dad; /* A nice purple */
         }
         .server-info h3 {
             margin: 0;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
+            color: #ffdd57;
+			transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+        }
+		.server-info:hover h3 {
+            color: #2c2c54;
+			transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
         }
         .server-info p {
             margin: 10px 0 0;
             font-size: 1.2rem;
         }
+
         footer {
             background-color: #2c2c54;
             color: #ffdd57;
@@ -67,20 +107,30 @@
             position: relative;
             bottom: 0;
             width: 100%;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
         }
         footer p {
             margin: 0;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
         }
         footer a {
             color: #ffdd57;
             text-decoration: none;
+            font-weight: bold;
+            text-shadow: 1px 1px #2c2c54;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Orbiting Luna 🌙</h1>
+        <h1>Orbiting Luna</h1>
         <p>Where light-hearted vibes meet blocky adventures</p>
     </header>
 
@@ -98,7 +148,7 @@
         </div>
 
         <p>
-            Hosted by our stellar captain, <strong>@cdedkosoy</strong>, this is the perfect place 
+            Hosted by our stellar captain, <a href="https://discord.gg/cwNRh9D8">@cdedkosoy</a>, this is the perfect place 
             to punch trees, build crazy contraptions, and share a laugh with friends. So grab 
             your pickaxe, hop on your favorite llama, and join us as we orbit Luna together. 🌟
         </p>
